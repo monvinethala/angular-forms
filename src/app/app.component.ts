@@ -12,9 +12,33 @@ export class AppComponent {
     { id: 3, name: 'Franc' },
     { id: 4, name: 'Andrew ' },
   ];
-  getEmpData: Array<{ ids: number; names: string }> = [];
-  
+  user: Array<{ name: string }> = [{ name: 'hello' }];
+  updateUserList(data: any) {
+    console.log(data.userList);
+    for (let i in this.user) {
+      this.user.push(data.userList);
+    }
+  }
 }
+
+setTimeout(function () {
+  console.log('Hello World!');
+}, 2000);
+
+var wait = new Promise(function (resolve, reject) {
+  setTimeout(resolve, 2000);
+}).then(function () {
+  console.log('Hello World!');
+});
+
+var wait = new Promise((resolve, reject) => {
+  setTimeout(resolve, 2000);
+}).then(() => {
+  console.log('Hello World!');
+});
+//spread operators
+
+//var num = [...num1, ...num2];
 
 /*
 Copyright Google LLC. All Rights Reserved.

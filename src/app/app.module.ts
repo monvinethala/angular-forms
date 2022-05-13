@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ReactiveFormsDemoComponent } from './reactive-forms-demo/reactive-forms-demo.component';
+import { RepeatPipePipe } from './repeat-pipe.pipe';
 
 @NgModule({
   imports: [
@@ -21,6 +22,7 @@ import { ReactiveFormsDemoComponent } from './reactive-forms-demo/reactive-forms
     TopBarComponent,
     ProductListComponent,
     ReactiveFormsDemoComponent,
+    RepeatPipePipe,
   ],
   bootstrap: [AppComponent],
 })
